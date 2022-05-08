@@ -1,8 +1,23 @@
 @font-face {
-    font-family: 'DIN Pro';
-    src: url('../fonts/DINPro.woff2') format('woff2'),
-        url('../fonts/DINPro.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+  font-family: "mplus_r";
+  src: url("../fonts/mplus_r/mplusBold.woff") format("woff"),
+    url("../fonts/mplus_r/mplusBold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "mplus_r";
+  src: url("../fonts/mplus_r/mplusRegular.woff") format("woff"),
+    url("../fonts/mplus_r/mplusRegular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "mplus_r";
+  src: url("../fonts/mplus_r/mplusLight.woff") format("woff"),
+    url("../fonts/mplus_r/mplusLight.woff2") format("woff2");
+  font-weight: 300;
+  font-display: swap;
 }

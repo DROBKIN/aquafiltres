@@ -1,0 +1,41 @@
+.benefits {
+  &__main-wrapper {
+    h2 {
+      text-align: center;
+    }
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10%;
+
+    @include media('<=desktop') {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include media('<=tablet') {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__wrapper {
+    background-color: $aliceblue;
+    padding: 10px;
+    position:relative;
+  }
+
+  &__image {
+
+    svg {
+      position: absolute;
+      top: -5px;
+      left: -5px;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    padding-left: 20px;
+  }
+}

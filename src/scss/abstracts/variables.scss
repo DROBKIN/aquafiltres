@@ -3,7 +3,7 @@ $breakpoints: (
   'phone-sm': 320px,
   'phone-md': 375px,
   'phone': 480px,
-  'phone-lg': 576px, 
+  'phone-lg': 576px,
   'tablet': 768px,
   'tablet-lg': 992px,
   'desktop': 1024px,
@@ -14,12 +14,31 @@ $breakpoints: (
 );
 
 // Colors
-$black: #000000;
-$white: #FFFFFF;
+
 $border: #CCCCCC;
 $success: #28A745;
 $warning: #FFC117;
 $error: #DC3545;
+
+$black: black;
+$white: white;
+$red: red;
+$green: green;
+$cyan: #0505A9;
+$dark: #FFFFFF;
+$borderW: 2px;
+
+$basicorange: #f5b400;
+$basicblue: #342ee4;
+$basicblue1:rgb(133, 129, 247);
+$basicblue2:rgb(203, 201, 244);
+$basicblue3:rgba(52,46,228,1);
+$basicgreen: #2d8763;
+$basicgreen1: #2ee466;
+$basicgreen2: #0e7b00;
+$basicgreen3: rgba(0, 255, 131, 0.58);
+$basicgreen4: rgba(0,245,213,1);
+$aliceblue: aliceblue;
 
 // Fonts
 $primary-font: 'Font';

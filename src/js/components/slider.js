@@ -1,5 +1,5 @@
 const swiperSlider = (() => {
-  const accountantInit = new Swiper('.js-accountant-slider', {
+  const accountantInit = new Swiper('.swiper-main', {
     slidesPerView: 2,
     spaceBetween: 20,
     speed: 800,

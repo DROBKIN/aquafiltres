@@ -5,10 +5,14 @@
 
 //import Accordion from './components/accordion';
 
+import swiperSlider from './components/slider';
+import burgerMenu from './components/burger-menu';
+
 (($) => {
   // When DOM is ready
   $(() => {
     //const accordions = new Accordion();
-    //burgerMenu.init();
+    burgerMenu.init();
+    swiperSlider.init();
   });
 })(jQuery);
