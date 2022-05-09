@@ -16,6 +16,8 @@
   position: relative;
 
   &__slide-wrapper {
+    max-width: 1280px;
+    
     &::after {
       content: "";
       display: block;
@@ -107,3 +109,4 @@
     min-width: max-content;
   }
 }
+
