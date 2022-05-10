@@ -1,0 +1,36 @@
+.social {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+
+    @include media("<=desktop") {
+      display: grid;
+      justify-content: center;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+
+    svg {
+      width: 100%;
+    }
+  }
+
+  .link-phone {
+    display: flex;
+    align-items: center;
+  }
+
+  .link-phone-text {
+    display: grid;
+  }
+}

@@ -1,11 +1,22 @@
 .header {
   padding: 2rem 0;
+  padding-top: 0;
 
   &__wrap {
     @extend %d-flex-center-between;
 
     @include media(">=tablet") {
       justify-content: center;
+    }
+  }
+
+  &__inner {
+    min-height: 70px;
+
+    @include media('<=desktop') {
+      display: flex;
+      min-width: 100%;
+      justify-content: space-between;
     }
   }
 }
@@ -19,29 +30,47 @@
   width: 100%;
   padding: 83px 16px 16px 16px;
   background-color: $border;
-  z-index: 5;
+  z-index: 12;
   transition: $base-transition;
   transform: translateX(110%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 100%;
+  min-height: 110px;
+  padding: 2rem 0;
 
-  @include media(">=tablet") {
+  @include media(">=desktop") {
     position: static;
     background-color: $white;
     transform: translateX(0);
     padding: 0;
     width: auto;
+    min-height: 50px;
   }
 
   &.active {
     transform: translateX(0);
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+
+    @include media("<=desktop") {
+      align-items: flex-start;
+    }
   }
 
   &__list {
     font-size: 16px;
     line-height: 2;
     @extend %d-flex-column;
+    justify-content: space-between;
+    min-width: 46%;
+    flex-direction: row;
 
-    @include media(">=tablet") {
-      flex-direction: row;
+    @include media("<=desktop") {
+      flex-direction: column;
     }
   }
 
@@ -63,7 +92,17 @@
   a {
     width: 150px;
     height: 20px;
-    background-color: $warning;
+  }
+
+
+}
+
+.logo-mb {
+  display: block;
+  order: -1;
+
+  @include media('>=desktop') {
+    display: none;
   }
 }
 
@@ -71,11 +110,13 @@
   width: 30px;
   height: 30px;
   position: relative;
-  z-index: 6;
+  z-index: 14;
   @extend %d-flex-column;
   justify-content: center;
   align-items: center;
-  @include media(">=tablet") {
+  margin-top: 20px;
+
+  @include media(">=desktop") {
     display: none;
   }
 
@@ -107,6 +148,7 @@
     border-radius: 1px;
     background-color: $black;
     transition: $base-transition;
+    z-index: 14;
 
     &:nth-child(1) {
       margin-bottom: 4px;
