@@ -4,14 +4,15 @@ const swiperSlider = (() => {
     spaceBetween: 0,
     speed: 800,
     loop: true,
+    centeredSlides: true,
+    autoplay: {
+      delay: 500000,
+      disableOnInteraction: false,
+    },
     centerInsufficientSlides: true,
     effect: 'fade',
     fadeEffect: {
       crossFade: true
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
     },
     pagination: {
       el: '.swiper-pagination',

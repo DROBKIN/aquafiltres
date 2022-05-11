@@ -21,3 +21,11 @@
   font-weight: 300;
   font-display: swap;
 }
+
+@font-face {
+	font-family: 'practice';
+	src: 	url('../fonts/practice/practice.woff') format('woff'),
+		url('../fonts/practice/practice.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
