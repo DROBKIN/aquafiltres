@@ -18,7 +18,7 @@
   &__nav-item {
     a, a > span {
       position: relative;
-      color: inherit;
+      color: $basicblue5;
       text-decoration: none;
       line-height: 24px;
     }
@@ -35,7 +35,7 @@
     .hover-5:before, .hover-5:after {
       right: 0;
       bottom: 0;
-      background: $basicgreen;
+      background: $basicblue5;
     }
     .hover-5:before {
       width: 100%;
@@ -54,7 +54,7 @@
     .hover-5 > span:before, .hover-5 > span:after {
       left: 0;
       top: 0;
-      background: $basicgreen;
+      background: $basicblue5;
     }
     .hover-5 > span:before {
       width: 100%;
@@ -73,6 +73,6 @@
 
   &__nav-link {
     font-size: 1.6rem;
-    color: $black;
+    color: $basicblue5;
   }
 }
