@@ -21,20 +21,49 @@
     }
 
     &.active {
-      background-color: #ccc;
+      background-color: $basicblue5;
+      color:  $white;
     }
   }
 
   &__content {
     display: none;
     padding: 16px;
-    border: 1px solid #ccc;
+    // border: 1px solid #ccc;
     font-size: 16px;
-    opacity: 0;
     transition: $base-transition;
 
     &.active {
       display: block;
+    }
+  }
+}
+
+.products {
+  &__header {
+    @include media("<=desktop") {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+    }
+
+    @include media("<=tablet") {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+    }
+  }
+
+  &__tabs-btn {
+    font-size: 1.4rem;
+    padding: 10px;
+    color: $basicblue5;
+
+    @include media("<=desktop") {
+
+      & + & {
+        margin-left: 0;
+      }
     }
   }
 }
