@@ -1,8 +1,6 @@
 .products {
-
   &__main-wrapper {
-    background-color: $aliceblue;
-
+    background-color: $white;
   }
 
   &__tabs {
@@ -12,11 +10,11 @@
     padding: 10px 20px;
     flex-wrap: wrap;
 
-    @include media('<=desktop') {
+    @include media("<=desktop") {
       min-height: 80px;
     }
 
-    @include media('<=tablet') {
+    @include media("<=tablet") {
       min-height: 50px;
     }
   }
@@ -32,11 +30,11 @@
     padding: 0 10px;
     margin-left: 10px;
 
-    @include media('<=desktop') {
+    @include media("<=desktop") {
       min-width: 100px;
     }
 
-    @include media('<=tablet') {
+    @include media("<=tablet") {
       flex-basis: 100%;
     }
 
@@ -97,17 +95,17 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
 
-    @include media('<=widescreen') {
+    @include media("<=widescreen") {
       grid-template-columns: 1fr 1fr 1fr;
       gap: 50px;
     }
 
-    @include media('<=desktop') {
+    @include media("<=desktop") {
       grid-template-columns: 1fr 1fr;
       gap: 15px;
     }
 
-    @include media('<=phone') {
+    @include media("<=phone") {
       grid-template-columns: 1fr;
       gap: 15px;
     }
@@ -125,7 +123,6 @@
     overflow: hidden;
 
     &:hover {
-
       .products__item-about {
         height: calc(50% + 50px);
         transition: 0.3s ease-in-out;
@@ -142,7 +139,6 @@
           opacity: 0.6;
         }
       }
-
     }
   }
 
@@ -151,12 +147,12 @@
     position: absolute;
     bottom: -50px;
     min-width: 100%;
-    background-color: $basicblue;
+    background-color: $white;
     transition: 0.3s ease-in-out;
     border-radius: 5%;
     display: grid;
     height: 50%;
-    color: $white;
+    color: $basicblue5;
     font-size: 2rem;
 
     h3 {
@@ -181,5 +177,14 @@
     position: absolute;
     bottom: 0;
     min-width: 100%;
+  }
+}
+
+.product-filter {
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 }
