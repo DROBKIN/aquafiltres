@@ -7,6 +7,7 @@
 
 import swiperSlider from './components/slider';
 import burgerMenu from './components/burger-menu';
+import tabs from './components/tabs';
 
 (($) => {
   // When DOM is ready
@@ -14,5 +15,6 @@ import burgerMenu from './components/burger-menu';
     //const accordions = new Accordion();
     burgerMenu.init();
     swiperSlider.init();
+    tabs.init();
   });
 })(jQuery);

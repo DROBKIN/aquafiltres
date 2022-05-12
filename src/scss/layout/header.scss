@@ -58,6 +58,17 @@
     @include media("<=desktop") {
       align-items: flex-start;
     }
+
+    .animated-button1 {
+      font-size: 1.6rem;
+      padding: 25px 22px;
+      max-width: max-content;
+      margin: 0 auto;
+    }
+
+    .social {
+      margin-bottom: 10px;
+    }
   }
 
   &__list {
@@ -154,11 +165,11 @@
     z-index: 14;
 
     &:nth-child(1) {
-      margin-bottom: 4px;
+      margin-bottom: 3px;
     }
 
     &:nth-child(3) {
-      margin-top: 4px;
+      margin-top: 3px;
     }
   }
 }

@@ -19,7 +19,6 @@ const tabs = (() => {
 
           tabList.forEach(btn => btn.classList.remove(CLASS_ACTIVE));
           e.currentTarget.classList.add(CLASS_ACTIVE);
-
           const idContent = e.currentTarget.dataset.tab;
 
           if(idContent === 'all') {
@@ -31,7 +30,6 @@ const tabs = (() => {
     
             currentContentList.forEach(content => content.classList.add(CLASS_ACTIVE));
           }
-
         });
       });
     }

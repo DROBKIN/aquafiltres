@@ -82,6 +82,10 @@
   border-radius:30px;
   margin-top: 40px;
   text-align: inherit;
+
+  @include media("<=tablet") {
+    margin-top: 10px;
+  }
 }
 
 .btn-33 {

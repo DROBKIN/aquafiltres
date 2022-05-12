@@ -31,12 +31,23 @@
         height: 600px;
     }
 
+    .f-r {
+        @include media('<=desktop') {
+            font-size: 1.4rem;
+        }
+    }
+
     &__filter {
         position: absolute;
         top: 115px;
         left: -280px;
         z-index: 1;
         width: max-content;
+
+        @include media('>=widescreen-lg') {
+            top: 0;
+            left: -860px;
+        }
 
         @include media('<=desktop') {
             top: 110px;
@@ -58,6 +69,10 @@
         img {
             width: 400px;
             object-fit: contain;
+
+            @include media('>=widescreen-lg') {
+                width: 550px;
+            }
 
             @include media('<=desktop') {
                 width: 300px;
@@ -258,28 +273,68 @@
     font-weight: 100;
 }
 
+.quality-inner {
+    right: 80px;
+    left: auto; 
+
+    @include media('<=desktop') {
+        right: auto;
+        left: 0;
+    }
+}
+
+.quality-text {
+    text-align: right;
+
+    .animated-button1 {
+        margin-left: 0;
+    }
+
+    @include media('<=desktop') {
+        text-align: left;
+    }
+
+    @include media('<=tablet') {
+        left: 0;
+        margin-left: 20px;
+    }
+}
+
+.quality-list {
+    position: absolute;
+    bottom: 80px;
+    z-index: 2;
+    right: 78px;
+    display: grid;
+
+    @include media('<=desktop') {
+        bottom: 65px;
+        grid-template-columns: 1fr;
+        right: 20px;
+    }
+}
+
 .quality-item {
     display: flex;
     align-items: center;
     max-width: 369px;
-    padding-left: 130px;
     justify-content: space-between;
     text-align: left;
     margin-bottom: 1rem;
 
-    &:nth-of-type(odd) {
-        svg {
-            fill: $basicgreen1;
-        }
+    @include media("<=desktop") {
+        padding-left: 0;
+        margin-bottom: 1rem;
     }
 
-    &:nth-of-type(2n) {
-        svg {
-            fill: $basicblue4;
+    .f-b3 {
+        @include media('<=desktop') {
+            font-size: 1.4rem;
         }
     }
 
     svg {
+        fill: $basicgreen1;
         margin-left: 2rem;
     }
 

@@ -67,7 +67,7 @@
 .link-phone-mbs {
   display: none;
   @include media("<=desktop") {
-    display: block;
+    display: grid;
   }
 }
 
