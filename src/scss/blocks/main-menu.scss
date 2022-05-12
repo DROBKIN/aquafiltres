@@ -1,38 +1,46 @@
 .menu {
-
   &__wrapper {
     display: flex;
     min-width: 100%;
     align-items: center;
     justify-content: space-between;
 
-    @include media('<=desktop') {
+    @include media("<=desktop") {
       display: grid;
-      
+
       .logo {
         margin-bottom: 55px;
+      }
+
+      .btn-33 {
+        display: block;
       }
     }
   }
 
   &__nav-item {
-    a, a > span {
+    a,
+    a > span {
       position: relative;
       color: $basicblue5;
       text-decoration: none;
       line-height: 24px;
     }
-    a:before, a:after, a > span:before, a > span:after {
-      content: '';
+    a:before,
+    a:after,
+    a > span:before,
+    a > span:after {
+      content: "";
       position: absolute;
-      transition: transform .5s ease;
+      transition: transform 0.5s ease;
     }
 
     .hover-5 {
       display: inline-block;
       overflow: hidden;
     }
-    .hover-5:before, .hover-5:after {
+    .hover-5:before,
+    .hover-5:after {
       right: 0;
       bottom: 0;
       background: $basicblue5;
@@ -49,9 +57,10 @@
     }
     .hover-5 > span {
       display: flex;
-      padding: 10px;
+      padding: 5px;
     }
-    .hover-5 > span:before, .hover-5 > span:after {
+    .hover-5 > span:before,
+    .hover-5 > span:after {
       left: 0;
       top: 0;
       background: $basicblue5;
@@ -66,7 +75,10 @@
       height: 100%;
       transform: translateY(-100%);
     }
-    .hover-5:hover:before, .hover-5:hover:after, .hover-5:hover > span:before, .hover-5:hover > span:after {
+    .hover-5:hover:before,
+    .hover-5:hover:after,
+    .hover-5:hover > span:before,
+    .hover-5:hover > span:after {
       transform: translate(0, 0);
     }
   }
@@ -74,5 +86,6 @@
   &__nav-link {
     font-size: 1.6rem;
     color: $basicblue5;
+    padding-bottom: 0;
   }
 }

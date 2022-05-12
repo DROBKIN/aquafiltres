@@ -77,12 +77,15 @@
   }
 }
 
-
 .buttons {
   text-align: center;
   border-radius:30px;
   margin-top: 40px;
   text-align: inherit;
+}
+
+.btn-33 {
+  display: none;
 }
 
 .animated-button1 {
@@ -95,13 +98,30 @@
           transform: translate(0%, 0%);
   overflow: hidden;
   color: $white;
-  font-size: 20px;
+  font-size: 2rem;
   letter-spacing: 2.5px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+
+    @include media("<=desktop") {
+      font-size: 1.6rem;
+    }
+
+    @include media("<=tablet") {
+      max-width: 160px;
+      font-size: 1rem;
+      padding: 14px 20px;
+      margin-right: 0;
+    }
+
+    @include media("<=phone") {
+      max-width: 140px;
+      font-size: 0.8rem;
+      padding: 14px 10px;
+    }
 }
 
 .animated-button1::before {
