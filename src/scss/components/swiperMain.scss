@@ -31,6 +31,48 @@
         height: 600px;
     }
 
+    &__filter {
+        position: absolute;
+        top: 115px;
+        left: -280px;
+        z-index: 1;
+        width: max-content;
+
+        @include media('<=desktop') {
+            top: 110px;
+            left: -150px;
+        }
+
+        @include media('<=tablet') {
+            top: 5px;
+            left: auto;
+            right: 65%;
+        }
+
+        @include media('<=phone-lg') {
+            top: 40px;
+            left: auto;
+            right: 20%;
+        }
+
+        img {
+            width: 400px;
+            object-fit: contain;
+
+            @include media('<=desktop') {
+                width: 300px;
+            }
+
+            @include media('<=tablet') {
+                width: 250px;
+            }
+
+            @include media('<=phone-lg') {
+                width: 200px;
+            }
+        }
+    }
+
     &__slide-wrapper {
         max-width: 100%;
         max-height: 400px;
@@ -105,6 +147,12 @@
 
         .f-b3 {
             text-shadow: 1px 1px 1px $black;
+            font-weight: 600;
+            font-size: 2rem;
+        }
+
+        .f-w-100 {
+            font-weight: 100;
         }
     }
 
@@ -122,7 +170,7 @@
     &__benefits {
         position: absolute;
         z-index: 2;
-        top: 75%;
+        bottom: 10px;
         left: 50%;
         transform: translate(-50%, 0);
         display: flex;
@@ -131,7 +179,7 @@
 
         @include media("<=tablet") {
             min-width: 20%;
-            top: 83%;
+            bottom: 10px;
         }
     }
 
@@ -188,4 +236,55 @@
 
 .green {
     color: $basicgreen1;
+}
+
+.t-u {
+    text-transform: uppercase;
+}
+
+.mb-3 {
+    margin-bottom: 3rem;
+}
+
+.m-r-0 {
+    margin-right: 0;
+}
+
+.m-t-3 {
+    margin-top: 3rem;
+}
+
+.f-w-100 {
+    font-weight: 100;
+}
+
+.quality-item {
+    display: flex;
+    align-items: center;
+    max-width: 369px;
+    padding-left: 130px;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom: 1rem;
+
+    &:nth-of-type(odd) {
+        svg {
+            fill: $basicgreen1;
+        }
+    }
+
+    &:nth-of-type(2n) {
+        svg {
+            fill: $basicblue4;
+        }
+    }
+
+    svg {
+        margin-left: 2rem;
+    }
+
+    .f-b3 {
+        text-align: right;
+        min-width: 305px;
+    }
 }
