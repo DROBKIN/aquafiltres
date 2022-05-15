@@ -1,107 +1,25 @@
 <div class="tabs js-tabs products container">
     <ul class="tabs__header products__header">
-      <li data-tab="tab-one" class="products__tabs-btn tabs__btn active">Фильтры для дома и офиса</li>
-      <li data-tab="tab-two" class="products__tabs-btn tabs__btn">Полупромышленные Фильтры</li>
-      <li data-tab="tab-three" class="products__tabs-btn tabs__btn">Катриджи для фильтров</li>
-      <li data-tab="tab-forth" class="products__tabs-btn tabs__btn">Запасные детали</li>
-      <li data-tab="tab-fifth" class="products__tabs-btn tabs__btn">Диспенсеры</li>
+        <li data-tab="tab-one" class="products__tabs-btn tabs__btn active">Фильтры для дома и офиса</li>
+        <li data-tab="tab-two" class="products__tabs-btn tabs__btn">Полупромышленные Фильтры</li>
+        <li data-tab="tab-three" class="products__tabs-btn tabs__btn">Катриджи для фильтров</li>
+        <li data-tab="tab-forth" class="products__tabs-btn tabs__btn">Запасные детали</li>
+        <li data-tab="tab-fifth" class="products__tabs-btn tabs__btn">Диспенсеры</li>
     </ul>
-  
+
     <div class="products__tabs tabs__content active" data-content="tab-one">
-        <ul class="products__list">
-            <li class="products__item">
-              <div class="products__item-about">
-                <h3>Фильтры для дома и офиса</h3>
-                <p>18 000 Р</p>
-                <button type="button" class="products__item-link f-b3">В корзину</button>
-              </div>
-            </li>
-            <li class="products__item">
-              Фильтры для дома и офиса
-              <div class="products__item-about">
-                <a href="#1" class="products__item-link f-b3">Подробнее</a>
-              </div>
-            </li>
-            <li class="products__item">
-              Фильтры для дома и офиса
-              <div class="products__item-about">
-                <a href="#1" class="products__item-link f-b3">Подробнее</a>
-              </div>
-            </li>
-            <li class="products__item">
-              Фильтры для дома и офиса
-              <div class="products__item-about">
-                <a href="#1" class="products__item-link f-b3">Подробнее</a>
-              </div>
-            </li>
-            <li class="products__item">
-              Фильтры для дома и офиса
-              <div class="products__item-about">
-                <a href="#1" class="products__item-link f-b3">Подробнее</a>
-              </div>
-            </li>
-            <li class="products__item">
-              Фильтры для дома и офиса
-              <div class="products__item-about">
-                <a href="#1" class="products__item-link f-b3">Подробнее</a>
-              </div>
-            </li>
-            <li class="products__item">
-              Фильтры для дома и офиса
-              <div class="products__item-about">
-                <a href="#1" class="products__item-link f-b3">Подробнее</a>
-              </div>
-            </li>
-            <li class="products__item">
-              Фильтры для дома и офиса
-              <div class="products__item-about">
-                <a href="#1" class="products__item-link f-b3">Подробнее</a>
-              </div>
-            </li>
-          </ul>
+        @@include('../blocks/products-list/products-list.html')
     </div>
-    <div class="products__tabs tabs__content" data-content="tab-two"><ul class="products__list">
-        <li class="products__item">Полупромышленные Фильтры</li>
-        <li class="products__item">Полупромышленные Фильтры</li>
-        <li class="products__item">Полупромышленные Фильтры</li>
-        <li class="products__item">Полупромышленные Фильтры</li>
-        <li class="products__item">Полупромышленные Фильтры</li>
-        <li class="products__item">Полупромышленные Фильтры</li>
-        <li class="products__item">Полупромышленные Фильтры</li>
-        <li class="products__item">Полупромышленные Фильтры</li>
-      </ul>
+    <div class="products__tabs tabs__content" data-content="tab-two">
+        @@include('../blocks/products-list/products-list.html')
     </div>
-    <div class="products__tabs tabs__content" data-content="tab-three"><ul class="products__list">
-        <li class="products__item">Катриджи для фильтров</li>
-        <li class="products__item">Катриджи для фильтров</li>
-        <li class="products__item">Катриджи для фильтров</li>
-        <li class="products__item">Катриджи для фильтров</li>
-        <li class="products__item">Катриджи для фильтров</li>
-        <li class="products__item">Катриджи для фильтров</li>
-        <li class="products__item">Катриджи для фильтров</li>
-        <li class="products__item">Катриджи для фильтров</li>
-      </ul>
+    <div class="products__tabs tabs__content" data-content="tab-three">
+        @@include('../blocks/products-list/products-list.html')
     </div>
-    <div class="products__tabs tabs__content" data-content="tab-forth"><ul class="products__list">
-        <li class="products__item">Запасные детали</li>
-        <li class="products__item">Запасные детали</li>
-        <li class="products__item">Запасные детали</li>
-        <li class="products__item">Запасные детали</li>
-        <li class="products__item">Запасные детали</li>
-        <li class="products__item">Запасные детали</li>
-        <li class="products__item">Запасные детали</li>
-        <li class="products__item">Запасные детали</li>
-      </ul>
+    <div class="products__tabs tabs__content" data-content="tab-forth">
+        @@include('../blocks/products-list/products-list.html')
     </div>
-    <div class="products__tabs tabs__content" data-content="tab-fifth"><ul class="products__list">
-        <li class="products__item">Диспенсеры</li>
-        <li class="products__item">Диспенсеры</li>
-        <li class="products__item">Диспенсеры</li>
-        <li class="products__item">Диспенсеры</li>
-        <li class="products__item">Диспенсеры</li>
-        <li class="products__item">Диспенсеры</li>
-        <li class="products__item">Диспенсеры</li>
-        <li class="products__item">Диспенсеры</li>
-      </ul>
+    <div class="products__tabs tabs__content" data-content="tab-fifth">
+        @@include('../blocks/products-list/products-list.html')
     </div>
-  </div>
+</div>
